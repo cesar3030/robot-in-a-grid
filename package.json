@@ -1,0 +1,15 @@
+{
+  "name": "robot-in-a-grid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/cesar3030/robot-in-a-grid",
+  "author": "César Jeanroy",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "serve": "live-server . --entry-file=index.html"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
