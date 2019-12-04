@@ -4,6 +4,47 @@
   box-sizing: border-box;
 }
 
+html, body, .wrapper {
+  height: 100%;
+}
+
 body {
   background-color: #e7e7e7;
 }
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+  height: 60%;
+  border: 2px solid #8f8f8f;
+  background-color: #fff;
+}
+
+#grid > .cell {
+  font-size: 2em;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  height: 10%;
+  border: 1px solid #8f8f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid > .path {
+  background-color: orange;
+}
+
+#grid > .forbidden {
+  background-color: black;
+}
+

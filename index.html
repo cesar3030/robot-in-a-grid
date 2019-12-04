@@ -8,9 +8,16 @@
   <title>Robot in a grid</title>
 </head>
 <body>
-  <div class='wrapper'>
-    hello!
+  <div class="wrapper">
+    <div id="grid"></div>
+    <button onClick="initGame()">Reset</button>
   </div>
-  <script src="game.js" type="text/javascript"></script>
+  <script src="./game.js" type="text/javascript"></script>
+  <script src="./render-game.js" type="text/javascript"></script>
+  <script>
+    (function(){
+      initGame();
+    })();
+  </script>
 </body>
 </html>
