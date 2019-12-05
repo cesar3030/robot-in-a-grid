@@ -30,21 +30,32 @@ h1 {
   flex-wrap: wrap;
   width: 60vmin;
   height: 60vmin;
-  /* border: 2px solid #8f8f8f; */
-  border-radius: 4px;
   background-color: #fff;
+  position: relative;
+}
+
+#grid:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #8f8f8f;
+  box-sizing: border-box;
 }
 
 #grid > .cell {
-  font-size: 2em;
+  font-size: 1.8em;
   margin: 0;
   padding: 0;
-  width: calc(60vmin / 10);
-  height: calc(60vmin / 10);
+  width: 10%;
+  height: 10%;
   border: 1px solid #8f8f8f;
   display: flex;
-  box-sizing: border-box;
-
+  position : relative;
+  cursor : pointer;
   justify-content: center;
   align-items: center;
 }
@@ -77,4 +88,17 @@ h1 {
 
 .btn:focus {
   outline: none;
+}
+
+
+@media (max-width: 500px) {
+  .wrapper {
+    height: 80vh;
+    width: 100vw;
+  }
+
+  #grid {
+    width: 95vmin;
+    height: 95vmin;
+  }
 }
